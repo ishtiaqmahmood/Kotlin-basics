@@ -1,28 +1,28 @@
-fun main(args:Array<String>) {
-    
-    // Number Data Types
-    // Six Primitive Data Type
+fun main() {
+    // Kotlin provides several built-in types that represent numbers.
 
-    // Byte: -128 to 127 (1 bit)
-    // Short: -32768 to 32767 (2 bit)
-    // Int: -2147483648 to 2147483647 (4 bit)
-    // Long: -9 trillion to +9 trillion (8 bit)
-    // Float: -3.40E+38 to +3.40E+38 (precision-6) (1 bit)
-    // Double: -1.79E+308 to +1.79E+308 (precision-15) (2 bit)
+    // Byte: 8-bit signed integer (-128 to 127)
+    val a: Byte = 100
 
-    val a: Byte = 100;
-    val b: Short = 1100;
-    val c: Int = 100000;
-    val d: Long = 10000000;
+    // Short: 16-bit signed integer (-32,768 to 32,767)
+    val b: Short = 1100
+
+    // Int: 32-bit signed integer (-2^31 to 2^31 - 1)
+    val c: Int = 100000
+
+    // Long: 64-bit signed integer (-2^63 to 2^63 - 1)
+    val d: Long = 10000000L
+
+    // Float: 32-bit single-precision floating point
     val e: Float = 12.34F
+
+    // Double: 64-bit double-precision floating point
     val f: Double = 12.3454344233133
 
+    // Kotlin automatically handles type conversion in expressions to the highest precision type
+    val sum = a + b + c + d // Result is Long
+    println("Sum of integers: $sum")
 
-    val sum = a + b + c + d; // Automatically change Type to the highest Source Type
-    println(sum)
-
-    val sub = d - f; // Double type
-    println(sub)
-
-
+    val sub = d - f // Result is Double
+    println("Subtraction with double: $sub")
 }

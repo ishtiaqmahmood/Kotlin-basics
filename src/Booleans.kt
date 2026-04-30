@@ -1,9 +1,6 @@
-fun main(args:Array<String>) {
-
-    // Booleans
-    // Primitive Data types
-    // just can be true or false
+fun main() {
+    // Booleans represent logical values that can be either true or false.
 
     val flag: Boolean = true
-    print(flag)
+    println("Boolean value: $flag")
 }

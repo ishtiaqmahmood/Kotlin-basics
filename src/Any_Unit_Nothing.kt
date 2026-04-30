@@ -1,25 +1,32 @@
-fun main(args:Array<String>){
+fun main() {
+    // Any, Unit, Nothing are special types in Kotlin.
 
-    // Any, Unit, Nothing
-
-    // Any: Every type in Kotlin except null
+    // Any: The root of the Kotlin type hierarchy. Every Kotlin class has Any as a superclass.
     val anyNumber: Any = 42
     val anyString: Any = "String"
+    println("Any Number: $anyNumber, Any String: $anyString")
 
-    // Unit: Like void in Java
-
-    // Nothing: fun is never completes
-    // return nothing, do nothing
+    add()
+    // doNothing() // This would never complete
 }
 
-fun add(): Unit{
-    val sum = 2+5
-    println(sum)
-    // return nothing just printing a value
+/**
+ * Unit: The type with only one value: the Unit object.
+ * This is equivalent to 'void' in Java.
+ */
+fun add(): Unit {
+    val sum = 2 + 5
+    println("Sum is: $sum")
+    // 'return Unit' or just 'return' is optional
 }
 
-fun doNothing(): Nothing{
+/**
+ * Nothing: A type that has no values.
+ * It is used to represent a value that never exists,
+ * for example, if a function never completes.
+ */
+fun doNothing(): Nothing {
     while (true) {
-
+        // Infinite loop
     }
 }

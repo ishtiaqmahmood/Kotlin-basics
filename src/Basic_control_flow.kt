@@ -1,47 +1,28 @@
-fun main(args:Array<String>) {
-
+fun main() {
     // Basic Control Flow
 
     // 1. Comparison Operators (==, !=, >, >=, <, <=, !)
     val one = 1
     val two = 2
 
-    var compare = (one == two) // ("==" -> equal equal ) one is not equal to two, so it returns false
-    compare = (one != two) // ("!=" -> not equal) one is not equal to two, so it returns true
-    compare = !(one == two) // ("!" -> not) one is not equal to two, so it returns false and then !false return true
-    compare = one > two // one is not greater than two, so it returns false
-    compare = !(one > two) // one is not greater than two, so it returns false, then !false returns true
-    compare = one >= two // one is not greater than or equal to  two, so it returns false
-    compare = !(one >= two) // one is not greater than or equal to two, so it returns false, then !false returns true
-    compare = one < two // one is smaller than two, so it returns true
-    compare = !(one < two) // one is smaller than two, so it returns true, then !true returns false
-    compare = one <= two // one is not greater than or equal to  two, so it returns true
-    compare = !(one <= two) // one is not greater than or equal to two, so it returns true, then !true returns false
+    println("one == two: ${one == two}")   // false
+    println("one != two: ${one != two}")   // true
+    println("!(one == two): ${!(one == two)}") // true
+    println("one > two: ${one > two}")     // false
+    println("one < two: ${one < two}")     // true
+    println("one >= two: ${one >= two}")   // false
+    println("one <= two: ${one <= two}")   // true
 
-    // 2. Logic Operators (AND:: && , OR:: ||)
+    // 2. Logic Operators (AND: &&, OR: ||)
+    println("true && false: ${true && false}") // false
+    println("true || false: ${true || false}") // true
 
-    compare = true && true // it returns true
-    compare = true && false // it returns false
-    compare = false && false // it returns true
-    compare = false && true // it returns false
-
-    compare = true || true // it returns true
-    compare = true || false // it returns true
-    compare = false || false // it returns false
-
-    // 3. String Equality
-
+    // 3. String and Char Comparison
     val x = "Kotlin"
     val y = "Java"
-    var z = (x == y) // it returns false
-
-    z = (x > y) // it returns true
+    println("Kotlin > Java: ${x > y}") // true (lexicographical comparison)
 
     val k = 'a'
     val l = 'b'
-
-    z = (k > l) // it returns false
-
-    println(z)
-
+    println("'a' > 'b': ${k > l}") // false
 }
