@@ -1,9 +1,7 @@
-fun main(args:Array<String>){
+fun main() {
     // Single line comment
     /*
     Multiline comments
-    Multiline comments
-    *?
      */
     println("Hello Kotlin")
 }

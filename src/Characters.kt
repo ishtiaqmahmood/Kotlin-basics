@@ -1,8 +1,7 @@
-fun main(args:Array<String>) {
-
-    // Characters
-    // Primitive Data Type
+fun main() {
+    // Characters are represented by the type Char.
+    // Character literals are enclosed in single quotes.
 
     val letter: Char = 'A'
-    print(letter)
+    println("Character: $letter")
 }

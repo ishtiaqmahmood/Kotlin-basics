@@ -1,19 +1,20 @@
-fun main(args: Array<String>) {
+fun main() {
+    // Strings in Kotlin are sequences of characters.
 
-    // Strings
-    // Non-Primitive Data Types
+    val a: String = "Hello"   // Immutable string (val)
+    var b: String = "Gatling" // Mutable string reference (var)
+    b = "John"
 
-    val a: String = "Hello" // Constant
-    var b: String = "Gatling" // Changeable
-    b = " John "
+    // String concatenation
+    val c: String = a + " " + b
+    println("Concatenated String: $c")
 
-    val c: String = a + b // String concatenation
+    // String templates
+    println("Using templates: a -> $a, b -> $b")
 
-    println("String: " + c) // Using "+" or concatenation Symbol
-    println("String: a-> $a, b-> $b"); // Using Sting Templates
+    val d: Int = 10
+    val e: Int = 20
 
-    val d: Int = 10;
-    val e: Int = 20;
-
-    println(c+d+e) // d & e is converted to the string
+    // When adding a number to a string, the number is converted to a string.
+    println(c + d + e) // Results in "Hello John1020"
 }
